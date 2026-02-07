@@ -139,6 +139,78 @@ nav a:hover{color:#fff}
 }
 
 /* TIMELINE */
+.timeline-grid{
+  display:grid;
+  grid-template-columns:2.5fr 1fr;
+  gap:30px;
+}
+
+.timeline-main{}
+
+.relatos{
+  background:var(--card);
+  border-radius:10px;
+  padding:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  height:fit-content;
+  position:sticky;
+  top:20px;
+}
+
+.relatos h3{
+  font-size:1.3rem;
+  margin-bottom:16px;
+  border-left:5px solid var(--accent);
+  padding-left:12px;
+}
+
+.relato-item{
+  background:#f9fafb;
+  border-left:4px solid var(--accent);
+  padding:12px;
+  border-radius:6px;
+  margin-bottom:12px;
+  font-size:0.95rem;
+}
+
+.timeline{
+  margin-top:50px;
+}
+
+.timeline-grid{
+  display:grid;
+  grid-template-columns:2.5fr 1fr;
+  gap:24px;
+}
+
+.relatos{
+  background:var(--card);
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.06);
+  height:fit-content;
+}
+
+.relatos h3{
+  font-size:1.3rem;
+  margin-bottom:16px;
+  border-left:5px solid var(--accent);
+  padding-left:12px;
+}
+
+.relato-item{
+  margin-bottom:14px;
+}
+
+.relato-item p{
+  font-size:0.95rem;
+  color:var(--muted);
+}
+
+@media(max-width:900px){
+  .timeline-grid{grid-template-columns:1fr}
+}
+
 .timeline{
   margin-top:50px;
 }
@@ -243,46 +315,67 @@ footer p{
 </section>
 
 <section class="timeline">
+  <div class="timeline-grid">
 
-<h3>Linha do tempo – Caso Cão Orelha</h3>
+    <div class="timeline-main">
 
-<div class="timeline-item" id="denuncia">
-  <span>04/01/2026 — Crime</span>
-  <p>
-    O Por volta das 5h30 da manhã, na Praia Brava (Florianópolis), o cão comunitário Orelha, de cerca de 10 anos, sofre uma lesão contundente na cabeça causada por um objeto rígido (como madeira ou garrafa). Denúncia de Maus-tratos: Moradores e frequentadores da praia percebem o animal ferido e iniciam a mobilização nas redes sociais para identificar os autores.
-  </p>
-</div>
+      <h3>Linha do tempo – Caso Cão Orelha</h3>
 
-<div class="timeline-item" id="resgate">
-  <span>05/01/2026 — Resgate e óbito</span>
-  <p>
-    O animal é resgatado por populares e levado a uma clínica veterinária. Devido à gravidade irreversível dos ferimentos e ao sofrimento intenso, a equipe médica opta pela eutanásia.
-  </p>
-</div>
+      <div class="timeline-item" id="denuncia">
+        <span>04/01/2026 — Crime</span>
+        <p>
+          O Por volta das 5h30 da manhã, na Praia Brava (Florianópolis), o cão comunitário Orelha, de cerca de 10 anos, sofre uma lesão contundente na cabeça causada por um objeto rígido (como madeira ou garrafa). Denúncia de Maus-tratos: Moradores e frequentadores da praia percebem o animal ferido e iniciam a mobilização nas redes sociais para identificar os autores.
+        </p>
+      </div>
 
-<div class="timeline-item" id="investigacao">
-  <span>Janeiro — Investigação</span>
-  <p>
-   A PCSC analisa mais de mil horas de imagens de câmeras de monitoramento e ouve 24 testemunhas. Mandados e Coação: A polícia cumpre mandados de busca e apreensão. Três adultos (pais e tio de suspeitos) são indiciados por coação de testemunhas e tentativa de atrapalhar as investigações. Exclusão de Suspeito: Um dos quatro adolescentes inicialmente investigados é descartado após comprovar que não estava no local no momento do crime.
-  </p>
-</div>
+      <div class="timeline-item" id="resgate">
+        <span>05/01/2026 — Resgate e óbito</span>
+        <p>
+          O animal é resgatado por populares e levado a uma clínica veterinária. Devido à gravidade irreversível dos ferimentos e ao sofrimento intenso, a equipe médica opta pela eutanásia.
+        </p>
+      </div>
 
-<div class="timeline-item" id="situacao">
-  <span>03/02/2026 — Conclusão do Inquérito</span>
-  <p>
-     A Polícia Civil conclui que um adolescente específico foi o autor da agressão fatal. O inquérito aponta contradições em seu depoimento e o identifica através de roupas usadas no dia. Pedido de Internação: A polícia representa pela internação provisória do adolescente, medida equivalente à prisão para adultos.
-    
-  </p>
-</div>
+      <div class="timeline-item" id="investigacao">
+        <span>Janeiro — Investigação</span>
+        <p>
+          A PCSC analisa mais de mil horas de imagens de câmeras de monitoramento e ouve 24 testemunhas. Mandados e Coação: A polícia cumpre mandados de busca e apreensão. Três adultos (pais e tio de suspeitos) são indiciados por coação de testemunhas e tentativa de atrapalhar as investigações. Exclusão de Suspeito: Um dos quatro adolescentes inicialmente investigados é descartado após comprovar que não estava no local no momento do crime.
+        </p>
+      </div>
 
-<div class="timeline-item" id="situacao">
-  <span>Situação Atual — Justiça</span>
-  <p>
-    O caso foi remetido ao Ministério Público e ao Poder Judiciário. A defesa do adolescente contesta as provas, alegando que o cão foi visto andando após o horário da suposta agressão. O cão Orelha faleceu em decorrência das agressões. O caso tornou-se símbolo da luta contra maus-tratos em SC, gerando projetos de lei e manifestações públicas.
-    
-  </p>
-</div>
+      <div class="timeline-item" id="situacao">
+        <span>03/02/2026 — Conclusão do Inquérito</span>
+        <p>
+          A Polícia Civil conclui que um adolescente específico foi o autor da agressão fatal. O inquérito aponta contradições em seu depoimento e o identifica através de roupas usadas no dia. Pedido de Internação: A polícia representa pela internação provisória do adolescente, medida equivalente à prisão para adultos.
+        </p>
+      </div>
 
+      <div class="timeline-item" id="situacao">
+        <span>Situação Atual — Justiça</span>
+        <p>
+          O caso foi remetido ao Ministério Público e ao Poder Judiciário. A defesa do adolescente contesta as provas, alegando que o cão foi visto andando após o horário da suposta agressão. O cão Orelha faleceu em decorrência das agressões. O caso tornou-se símbolo da luta contra maus-tratos em SC, gerando projetos de lei e manifestações públicas.
+        </p>
+      </div>
+
+    </div>
+
+    <aside class="relatos">
+      <h3>Relatos Oculares</h3>
+
+      <div class="relato-item">
+        <p><strong>Relato 1:</strong> Testemunha afirma ter visto movimentação incomum na faixa de areia nas primeiras horas da manhã.</p>
+      </div>
+
+      <div class="relato-item">
+        <p><strong>Relato 2:</strong> Moradores relatam ter ouvido barulho semelhante a impacto antes de encontrarem o animal ferido.</p>
+      </div>
+
+      <div class="relato-item">
+        <p><strong>Relato 3:</strong> Frequentador da praia afirma que o cão ainda caminhava com dificuldade após o horário estimado da agressão.</p>
+      </div>
+
+    </aside>
+
+  </div>
 </section>
 
 </main>
@@ -293,3 +386,5 @@ footer p{
 
 </body>
 </html>
+esinsira uma coluna do lado direto para com titulo de relatos, nesta coluna sera inserida relatos ocular
+
